@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="add" method="post">
+
+    {% csrf_token %}
+    <label for="num1">Enter num1: </label>
+    <input type="text" name="num1" for = "num1"><br>
+    <label for="num2">Enter num2: </label>
+    <input type="text" name="num2" for = "num2"><br>
+    <input type="submit" label = "calc">
+
+</form>
+
+
+{%endblock%}
